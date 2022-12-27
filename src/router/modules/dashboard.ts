@@ -20,7 +20,7 @@ const routes: Array<RouteRecordRaw> = [
     
     path: '/dashboards',
     name: routeName,
-    redirect: '/dashboard/บัญชีส่วนตัว',
+    redirect: '/dashboard/ข้อมูลบัตร',
     component: Layout,
     meta: {
       title: 'บัตร ของฉัน',
