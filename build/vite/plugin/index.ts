@@ -10,7 +10,8 @@ import { configMockPlugin } from './mock';
 import { configCompressPlugin } from './compress';
 
 export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean, prodMock) {
-  const { VITE_BUILD_COMPRESS, VITE_BUILD_COMPRESS_DELETE_ORIGIN_FILE } = viteEnv;
+  const VITE_BUILD_COMPRESS_DELETE_ORIGIN_FILE = false
+  const VITE_BUILD_COMPRESS = 'none'
   const VITE_USE_MOCK = true
   const vitePlugins: (Plugin | Plugin[] | PluginOption[])[] = [
     // have to
