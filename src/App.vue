@@ -1,19 +1,19 @@
 <template>
-  <NConfigProvider
+  <!-- <NConfigProvider
     v-if="!isLock"
     :locale="zhCN"
     :theme="getDarkTheme"
     :theme-overrides="getThemeOverrides"
     :date-locale="dateZhCN"
-  >
+  > -->
     <AppProvider>
       <RouterView />
     </AppProvider>
-  </NConfigProvider>
+  <!-- </NConfigProvider> -->
 
-  <transition v-if="isLock && $route.name !== 'login'" name="slide-up">
+  <!-- <transition v-if="isLock && $route.name !== 'login'" name="slide-up">
     <LockScreen />
-  </transition>
+  </transition> -->
 </template>
 
 <script lang="ts" setup>
