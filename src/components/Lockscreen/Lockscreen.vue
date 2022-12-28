@@ -36,7 +36,6 @@
       </div>
     </template>
 
-    <!--登录-->
     <template v-if="showLogin">
       <div class="login-box">
         <n-avatar :size="128">
